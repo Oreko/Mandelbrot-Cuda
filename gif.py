@@ -10,7 +10,7 @@ import sys
 
 def main():
     if(len(sys.argv) != 4):
-        print("Usage: {sys.argv[0]} x y threshold")
+        print("Usage: {} x y threshold".format(sys.argv[0]))
         return(1)
 
     cwd = os.getcwd()
