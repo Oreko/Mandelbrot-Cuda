@@ -3,6 +3,14 @@ Generate mandelbrot images and gifs using cuda
 
 This is a simple project written to relearn basic cuda programming.
 
+To change the dimensions of the images created (when swapping between making gifs and static images I highly suggest this), edit mandelbrot.cu line 24
+```
+#ifndef IMAGE_SIZE
+#define IMAGE_SIZE 4096 // Width and height of output image
+#endif
+```
+
+
 To use the gif generator, you need to have ffpmeg and python installed.
 Basic usage is
 ```
