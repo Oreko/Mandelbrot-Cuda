@@ -15,12 +15,13 @@ gif.py -0.4997425 0.523556 4
 
 Similarly, to run the static image generator
 ```
-./mandelbrot -0.4997425 0.523556 4 10000 out.png
+./mandelbrot -0.4997425 0.523556 4 10000 0.000000000001 out.png
 ^ Name of executable
              ^ x coordinate (real)
                         ^ y coordinate (imaginary)
                                  ^ Threshold (limit norm)
                                    ^ Limit (iteration limit)
-                                         ^ Output Filename
+                                         ^ Scale (inverse zoom)
+                                                        ^ Output Filename
 ```
 ![Simple Static](https://i.imgur.com/uFXB9Fm.jpg)
